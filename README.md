@@ -1,65 +1,43 @@
-🏡 Real Estate Web Application
+E-Ticaret Web Sitesi
 
-Bu proje, emlak satış, kiralama ve ev inceleme işlemlerini kolaylaştırmak için geliştirilmiş bir web uygulamasıdır. Kullanıcılar, istedikleri özelliklere sahip evleri arayabilir, detaylarını görüntüleyebilir ve ilanları yönetebilirler.
+Bu, ASP.NET MVC, C# ve SQLite kullanarak yapılmış küçük çaplı bir e-ticaret web sitesidir. Ürün ekleme/çıkarmanın yanı sıra, alışveriş sepeti yönetimi gibi özellikler içerir.
 
-🚀 Özellikler
+Özellikler
 
-📋 Emlak satış ve kiralama ilanları oluşturma
+Ürün Yönetimi: Ürünleri katalogdan ekleyip çıkarma.
+Alışveriş Sepeti: Ürünleri sepete ekleyip çıkarma, sepete göz atma.
+SQLite Veritabanı: Ürün bilgileri ve sepet verileri için veritabanı kullanımı.
+Kullanılan Teknolojiler
 
-🔍 Detaylı arama ve filtreleme özellikleri
+ASP.NET MVC: Web uygulamasının yapısını oluşturmak için kullanıldı.
+C#: Uygulama mantığı ve işlevselliği için kullanılan programlama dili.
+SQLite: Ürün ve sepet verilerini saklamak için kullanılan veritabanı.
+Kurulum
 
-🏠 Ev detay sayfaları (fotoğraf, açıklama, fiyat vb.)
-
-👤 Kullanıcı giriş/çıkış ve kayıt işlemleri
-
-📊 Yönetici paneli ile ilanları yönetme
-
-🛠️ Kullanılan Teknolojiler
-
-Backend: C#, ASP.NET Core
-
-ORM: Entity Framework
-
-Veritabanı: MongoDB
-
-Frontend: HTML, CSS, JavaScript
-
-Diğer: LINQ, RESTful API
-
-⚙️ Kurulum
-
-Projeyi Klonlayın:
-
-git clone https://github.com/kullaniciadi/real-estate-app.git
-
-Bağımlılıkları Yükleyin:
-
+Reposunu bilgisayarınıza klonlayın:
+git clone <repository-url>
+Projeyi Visual Studio (veya tercih ettiğiniz IDE) ile açın.
+NuGet paketlerini geri yükleyin:
 dotnet restore
-
-Veritabanı Bağlantısını Yapılandırın:appsettings.json dosyasında MongoDB bağlantı ayarlarını düzenleyin:
-
-{
-  "ConnectionStrings": {
-    "MongoDb": "mongodb://localhost:27017/realestate"
-  }
-}
-
-Projeyi Başlatın:
-
+Projeyi derleyin:
+dotnet build
+Uygulamayı çalıştırın:
 dotnet run
+Uygulama şu adreste çalışacaktır: http://localhost:5000.
+Veritabanı
 
-🚩 Kullanım
+Bu proje SQLite kullanarak verileri saklar. Veritabanı şeması, uygulama ilk kez çalıştırıldığında otomatik olarak oluşturulacaktır.
 
-Kayıt Ol: Hesap oluşturun.
+Kullanım
 
-Evleri İncele: Fiyat, konum ve diğer kriterlere göre filtreleyin.
+Yönetici arayüzü üzerinden ürünleri katalogunuza ekleyin.
+Katalogu gezerek ürünleri sepete ekleyin.
+Sepetinizi görüntüleyin, ürün miktarlarını değiştirin veya öğeleri çıkarın.
+Ödeme işlemine geçiş yapın (uygulamanızda bu özellik varsa).
+Katkı Sağlama
 
-İlan Ekle: Satılık veya kiralık ev ilanınızı oluşturun.
+Bu repository'yi fork'layarak veya pull request göndererek iyileştirme veya hata düzeltmeleri yapabilirsiniz.
 
-🤝 Katkıda Bulunma
-
-Katkıda bulunmak isterseniz, lütfen bir fork oluşturun, değişikliklerinizi yapın ve bir pull request gönderin.
-
-📜 Lisans
+Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır.
